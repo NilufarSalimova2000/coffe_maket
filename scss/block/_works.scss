@@ -1,0 +1,144 @@
+.works {
+    padding-bottom: 120px;
+}
+
+.works__title {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 133%;
+    text-align: center;
+    color: #83888f;
+    margin-bottom: 80px;
+}
+
+.works__item {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.works__item::before {
+    content: "01";
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 100%;
+    color: #fdd6ba;
+}
+
+.works__sub_title {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 114%;
+    color: #333d4b;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.works__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 167%;
+    color: #333d4b;
+}
+
+.works__btn {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 139%;
+    color: #fefcf7;
+    border-radius: 6px;
+    background-color: #0e8784;
+    padding: 16px 31px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    max-width: max-content;
+    margin-top: 23px;
+}
+
+.box {
+    width: 497px;
+    height: 2px;
+    background-color: #fdd6ba;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 48px;
+    display: none;
+}
+
+.item {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #0e8784;
+}
+
+@media screen and (min-width: 768px) {
+    .works {
+        padding-bottom: 144px;
+    }
+
+    .works__title {
+        text-align: start;
+        margin-bottom: 40px;
+    }
+
+    .box {
+        display: inline-block;
+        display: flex;
+    }
+
+    .works__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .works__item {
+        text-align: start;
+        margin-bottom: 44px;
+    }
+    
+    .works__sub_title {
+        width: 142px;
+        margin-top: 42px;
+        margin-bottom: 38px;
+    }
+
+    .works__text {
+        width: 200px;
+    }
+
+    .works__btn {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .works {
+        padding-bottom: 200px;
+    }
+
+    .works__title {
+        margin-bottom: 80px;
+    }
+
+    .box {
+        width: 760px;
+        margin-bottom: 67px;
+    }
+
+    .works__sub_title {
+        font-size: 32px;
+        line-height: 112%;
+        margin-top: 38px;
+        margin-bottom: 42px;
+        width: 200px;
+    }
+
+    .works__text {
+        width: 285px;
+    }
+}

@@ -1,0 +1,111 @@
+.collection {
+    padding-top: 197px;
+    padding-bottom: 120px;
+    background-image: url('../img/collection_mobile.svg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 112px;
+}
+
+.collection__list {
+    text-align: center;
+}
+
+.collection__item:not(:last-child) {
+    margin-bottom: 48px;
+}
+
+.collection__item::before {
+    content: "";
+    background-image: url('../img/collection_img.svg');
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 151px;
+    display: inline-block;
+    margin-bottom: 24px;
+}
+
+.collection__sub_title {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 133%;
+    color: #333d4b;
+    margin-bottom: 16px;
+}
+
+.collection__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 167%;
+    color: #333d4b;
+    width: 282px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .collection {
+        padding: 203px 98px 144px 97px;
+        background-image: url('../img/collection_tablet_bg.svg');
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: 144px;
+    }
+
+    .collection__item {
+        display: flex;
+        gap: 35px;
+        text-align: start;
+    }
+
+    .collection__item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    .collection__item::before {
+        content: "";
+        background-image: url('../img/collection_img.svg');
+        background-repeat: no-repeat;
+        width: 255px;
+        height: 193px;
+        display: inline-block;
+        margin-bottom: 32px;
+    }
+
+    .collection__des {
+        margin-top: 30px;
+    }
+
+    .collection__item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (min-width: 1111px) {
+    .collection {
+        padding-top: 262px;
+        padding-bottom: 200px;
+        background-image: url('../img/collection_desktop.svg');
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: 144px;
+    }
+
+    .collection__list {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .collection__item {
+        display: inline;
+        text-align: center;
+    }
+
+    .collection__text {
+        font-size: 16px;
+        line-height: 162%;
+        width: 255px;
+    }
+
+}
